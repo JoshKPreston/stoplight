@@ -1,0 +1,66 @@
+/*
+
+    <div id="stoplight">
+      <div class="stoplight-pole" id="stoplightPole">
+        <div class="stoplight-main" id="stoplightMain">
+          <div class="stoplight-light" id="redLight"></div>
+          <div class="stoplight-light" id="yellowLight"></div>
+          <div class="stoplight-light" id="greenLight"></div>
+        </div>
+      </div>
+    </div>
+
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #555;
+}
+
+.stoplight-pole {
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 150px;
+  width: 80px;
+  background-color: #333;
+}
+
+.stoplight {
+  margin: 0 auto;
+  background-color: #333;
+  height: 600px;
+  width: 250px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10
+}
+
+.stoplight-light {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.stoplight-light#redLight {
+  background-color: red;
+  box-shadow: 0px 0px 20px 5px red;
+}
+
+.stoplight-light#yellowLight {
+  background-color: yellow;
+  box-shadow: 0px 0px 20px 5px yellow;
+}
+
+.stoplight-light#greenLight {
+  background-color: chartreuse;
+  box-shadow: 0px 0px 40px 20px chartreuse;
+}
+
